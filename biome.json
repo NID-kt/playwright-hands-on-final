@@ -1,5 +1,13 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.7.1/schema.json",
+  "files": {
+    "ignore": [
+      "**/package.json",
+      "**/pnpm-lock.yaml",
+      "**/node_modules/**",
+      "**/.next/**"
+    ]
+  },
   "organizeImports": {
     "enabled": true
   },
@@ -16,8 +24,7 @@
     "indentWidth": 2,
     "lineWidth": 80,
     "lineEnding": "lf",
-    "attributePosition": "auto",
-    "ignore": ["**/package.json", "**/pnpm-lock.yaml"]
+    "attributePosition": "auto"
   },
   "javascript": {
     "formatter": {
