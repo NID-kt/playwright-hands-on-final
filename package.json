@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "check": "biome check .",
-    "format": "biome check --apply ."
+    "format": "biome check --apply .",
+    "test": "jest",
+    "test:ci": "jest --ci --coverage",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "next": "14.2.3",
