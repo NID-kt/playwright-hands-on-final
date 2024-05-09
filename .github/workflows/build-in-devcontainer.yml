@@ -17,3 +17,9 @@ jobs:
         with:
           push: never
           runCmd: pnpm build
+
+      - name: Test
+        uses: devcontainers/ci@v0.3
+        with:
+          push: never
+          runCmd: pnpm test
