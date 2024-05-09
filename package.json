@@ -12,7 +12,8 @@
     "format": "biome check --apply .",
     "test": "jest",
     "test:ci": "jest --ci --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "next": "14.2.3",
