@@ -28,4 +28,12 @@ test.describe('Form submission', () => {
     await expect(page.getByText('名前')).toBeVisible();
     await expect(page.getByText('送信')).toBeVisible();
   });
+
+  test('should match screenshot', async ({ page }) => {
+    // テスト対象のページにアクセス
+    await page.goto('/');
+
+    // スクリーンショットを取得
+    await expect(page).toHaveScreenshot();
+  });
 });
